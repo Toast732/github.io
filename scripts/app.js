@@ -8,7 +8,7 @@
 
         let aboutUsButton = document.getElementById("AboutUsBtn");
 
-        aboutUsButton.addEventListener("click", function(){
+        aboutUsButton?.addEventListener("click", function(){
             location.href="/about.html";
         });
 
@@ -31,7 +31,7 @@
 
 		let Article = document.createElement("article");
 
-		let ArticleParagraph = document.createElement(`<p id="ArticleParagraph" class="mt-3">This is my article paragraph</p>`);
+		let ArticleParagraph = `<p id="ArticleParagraph" class="mt-3">This is my Article Paragraph</p>`
 
 		Article.innerHTML = ArticleParagraph;
 		Article.setAttribute("class", "container");
@@ -78,8 +78,3 @@
 
     window.addEventListener("load", Start);
 })();
-
-let a = [
-	"car",
-	"vroom"
-]
