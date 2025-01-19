@@ -9,7 +9,16 @@
         let aboutUsButton = document.getElementById("AboutUsBtn");
 
         aboutUsButton?.addEventListener("click", function(){
-            location.href="/about.html";
+			// Set the path we're wanting to navigate to.
+			let NavPath = "/about.html";
+			
+			// Check if we contain github.io in our path.
+			if(location.href.match("/github.io")) {
+				NavPath = "/github.io" + NavPath;
+			}
+
+			// Navigate to the path.
+            location.href=NavPath;
         });
 
 		let MainContent = document.getElementsByTagName("main")[0];
