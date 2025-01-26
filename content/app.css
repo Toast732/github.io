@@ -1,0 +1,20 @@
+.calendar-row {
+	min-width: fit-content;
+}
+
+div.calendar-date-row > div.calendar-column {
+	border: 1px solid #000;
+	height: 120px;
+}
+
+div .calendar-column.inactive {
+	background-color: #909090;
+}
+
+body {
+	padding-bottom: 150px;
+}
+
+.carousel-inner img {
+	margin: auto;
+}
