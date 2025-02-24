@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<header>
+</header>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact</title>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="./Content/app.css">
+
+</head>
+<body>
+
+<main class="container">
+  <h1>
+    <class id="contactForm">
+      Contact us
+    </class>
+
+    <form class="col-lg-6 col-md-10 col-sm-12 mb-4">
+
+      <div class="input-group mb-3">
+        <span class="input-group-text">Full Name: </span>
+        <input id="fullName" name="fullName" type="text" class="form-control"
+               aria-describedby="Full Name" aria-label="Full Name" required>
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text">Email Address: </span>
+        <input id="emailAddress" name="emailAddress" type="email" class="form-control"
+               aria-describedby="Email Address" aria-label="Email Address" required>
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text">Subject: </span>
+        <textarea id="subject" name="subject" class="form-control"
+                  aria-describedby="Subject" aria-label="Subject" required></textarea>
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text">Message: </span>
+        <textarea id="message" name="message" class="form-control"
+                  aria-describedby="Message" aria-label="Message" required></textarea>
+      </div>
+
+      <div class="input-group mb-3">
+        <input id="subscribeCheckbox" name="subscribeCheckbox" type="checkbox" class="form-check-input">
+        <label class="form-check-label" for="subscribeCheckbox">Subscribe to our contact list</label>
+      </div>
+
+      <button id="sendButton" type="submit" class="btn btn-primary"><i class="fa-solid fa-right-to-bracket"></i> Submit</button>
+      <button id="cancelButton" type="submit" class="btn btn-warning" ><i class="fa-solid fa-xmark"></i> Cancel</button>
+
+    </form>
+  </h1>
+
+    <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="submitModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="submitModalLabel">Confirmation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="submitModalBody">
+                    Thank you for writing us. We will get back to you as soon as possible.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" id="signUpModalBTN" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submitModal">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div>
+    <a href="contact-list.html" class="btn btn-outline-primary mt-4"><i class="fa-solid fa-arrow-left"></i> Show contact list</a>
+  </div>
+
+  <h2>
+      <class id="feedbackForm">
+          Give us feedback
+      </class>
+
+      <form class="col-lg-6 col-md-10 col-sm-12 mb-4">
+
+          <div class="input-group mb-3">
+              <span class="input-group-text">Name: </span>
+              <input id="name" name="Name" type="text" class="form-control"
+                     aria-describedby="Name" aria-label="Name" required>
+          </div>
+
+          <div class="input-group mb-3">
+              <span class="input-group-text">Feedback: </span>
+              <input id="feedback" name="Feedback" type="text" class="form-control"
+                     aria-describedby="Feedback" aria-label="Feedback" required>
+          </div>
+
+          <button id="sendButtonFeedback" type="submit" class="btn btn-primary"><i class="fa-solid fa-right-to-bracket"></i> Submit</button>
+          <button id="cancelButtonFeedback" type="button" class="btn btn-warning" ><i class="fa-solid fa-xmark"></i> Cancel</button>
+
+      </form>
+  </h2>
+
+    <div id="feedbackModal" class="modal" aria-labelledby="submitModalLabel">
+        <div class="modal-content" id="feedbackModalBody">
+            <span class="close">&times;</span>
+            <p>Thank you for giving us feedback name, we will take it into consideration!</p>
+        </div>
+    </div>
+
+
+</main>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./Scripts/namespace.js"></script>
+<script src="./Scripts/contact.js"></script>
+<script src="./Scripts/main.js"></script>
+
+
+</body>
+
+<footer>
+    <nav class="navbar fixed-bottom navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="footerNavbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="footerNavBarList">
+                    <li class="nav-item">
+                        <a class="nav-link" href="tos.html"><i class="fa-solid fa-scroll"></i> TOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="privacy-policy.html"><i class="fa-solid fa-lock"></i> Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</footer>
+</html>

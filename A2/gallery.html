@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+</header>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gallery</title>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="./Content/app.css">
+</head>
+<body>
+
+<!-- Images used to open the lightbox -->
+<div class="row" id="galleryRow">
+  <div id="galleryImage1" class="column">
+    <img src="" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div id="galleryImage2" class="column">
+    <img src="" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div id="galleryImage3" class="column">
+    <img src="" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div id="galleryImage4" class="column">
+    <img src="" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="thumbnail-container">
+      <div id="modalSlide1" class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="" style="width:100%" alt="">
+      </div>
+
+      <div id="modalSlide2" class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="" style="width:100%" alt="">
+      </div>
+
+      <div id="modalSlide3" class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="" style="width:100%" alt="">
+      </div>
+
+      <div id="modalSlide4" class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="" style="width:100%" alt="">
+      </div>
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div id="imageControl1" class="column">
+      <img class="demo" src="" onclick="currentSlide(1)" alt="Image 1">
+    </div>
+
+    <div id="imageControl2" class="column">
+      <img class="demo" src="" onclick="currentSlide(2)" alt="Image 2">
+    </div>
+
+    <div id="imageControl3" class="column">
+      <img class="demo" src="" onclick="currentSlide(3)" alt="Image 3">
+    </div>
+
+    <div id="imageControl4" class="column">
+      <img class="demo" src="" onclick="currentSlide(4)" alt="Image 4">
+    </div>
+
+  </div>
+</div>
+
+<script src="Scripts/main.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="Scripts/gallery.js"></script>
+
+</body>
+
+<footer>
+  <nav class="navbar fixed-bottom navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="footerNavbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="footerNavBarList">
+          <li class="nav-item">
+            <a class="nav-link" href="tos.html"><i class="fa-solid fa-scroll"></i> TOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="privacy-policy.html"><i class="fa-solid fa-lock"></i> Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</footer>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<header>
+</header>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Events</title>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <script src="./node_modules/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="./Content/app.css">
+
+</head>
+<body>
+
+<div class="container">
+  <h1>
+    <class>
+      Events
+    </class>
+  </h1>
+
+	<div id="calendar-frame">
+		<span id="calendar-header-frame" class="d-flex justify-content-between align-items-center">
+				<button id="prevMonthButton" class="btn btn-primary" type="button"><</button>
+				<h2 id="yearMonthLabel" class=""></h2>
+				<button id="nextMonthButton" class="btn btn-primary" type="button">></button>
+		</span>
+		<div id="calendar-grid" class="container calendar-grid overflow-auto">
+			<div id="calendar-header-row" class="row calendar-row calendar-header-row text-center bg-dark text-white pb-3 pt-3 flex-nowrap">
+				<div class="col calendar-column">Sunday</div>
+				<div class="col calendar-column">Monday</div>
+				<div class="col calendar-column">Tuesday</div>
+				<div class="col calendar-column">Wednesday</div>
+				<div class="col calendar-column">Thursday</div>
+				<div class="col calendar-column">Friday</div>
+				<div class="col calendar-column">Saturday</div>
+			</div>
+		</div>
+		<div id="filter-frame">
+			<h3>Filters</h3>
+		</div>
+		<div id="map-frame" class="map-frame"></div>
+	</div>
+</div>
+
+<script src="./Scripts/opportunities.js"></script>
+<script src="./Scripts/calendar.js"></script>
+<script src="./Scripts/main.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+<footer>
+	<nav class="navbar fixed-bottom navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="footerNavbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0" id="footerNavBarList">
+					<li class="nav-item">
+						<a class="nav-link" href="tos.html"><i class="fa-solid fa-scroll"></i> TOS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="privacy-policy.html"><i class="fa-solid fa-lock"></i> Privacy Policy</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</footer>
+</html>
