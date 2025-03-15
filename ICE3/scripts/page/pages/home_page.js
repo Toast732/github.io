@@ -1,8 +1,8 @@
 "use strict";
 
-import { Page, Pages } from "../page";
-import { AboutPage } from "./about_page";
-import { getElementByIdSafe } from "../../html_utilities";
+import { Page, Pages } from "../page.js";
+import { AboutPage } from "./about_page.js";
+import { getElementByIdSafe } from "../../html_utilities.js";
 
 
 export const HomePage = new Page(

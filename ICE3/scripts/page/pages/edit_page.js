@@ -1,10 +1,10 @@
 "use strict";
 
-import { Page, Pages } from "../page";
-import { getElementByIdSafe } from "../../html_utilities";
-import { Contact, AddContact } from "../../contact";
-import { ContactListPage } from "./contact_list_page";
-import { AuthGuard } from "../../authguard";
+import { Page, Pages } from "../page.js";
+import { getElementByIdSafe } from "../../html_utilities.js";
+import { Contact, AddContact } from "../../contact.js";
+import { ContactListPage } from "./contact_list_page.js";
+import { AuthGuard } from "../../authguard.js";
 
 export const EditPage = new Page(
 	"EditPage",

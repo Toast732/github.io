@@ -1,6 +1,6 @@
 "use strict";
 
-import { Page, Pages } from "../page";
+import { Page, Pages } from "../page.js";
 
 export const ServicesPage = new Page(
 	"ServicesPage",

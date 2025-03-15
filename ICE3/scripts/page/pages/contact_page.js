@@ -2,9 +2,9 @@
 
 "use strict";
 
-import { Page, Pages } from "../page";
-import { getElementByIdSafe } from "../../html_utilities";
-import { AddContact } from "../../contact";
+import { Page, Pages } from "../page.js";
+import { getElementByIdSafe } from "../../html_utilities.js";
+import { AddContact } from "../../contact.js";
 
 export const ContactPage = new Page(
 	"ContactPage",

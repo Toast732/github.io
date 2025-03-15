@@ -1,10 +1,10 @@
 "use strict";
 
-import { Page, Pages } from "../page";
-import { getElementByIdSafe } from "../../html_utilities";
-import { User } from "../../user";
+import { Page, Pages } from "../page.js";
+import { getElementByIdSafe } from "../../html_utilities.js";
+import { User } from "../../user.js";
 
-import { ContactListPage } from "./contact_list_page";
+import { ContactListPage } from "./contact_list_page.js";
 
 export const LoginPage = new Page(
 	"LoginPage",

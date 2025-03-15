@@ -1,6 +1,6 @@
 "use strict";
 
-import { Pages } from "./page/page";
+import { Pages } from "./page/page.js";
 
 let sessionTimeout;
 

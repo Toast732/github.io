@@ -1,27 +1,29 @@
 "use strict";
 
-import { InjectHeader } from "./header";
-import { querySelectorSafe } from "./html_utilities";
+import { InjectHeader } from "./header.js";
 
-import { Page, Pages } from "./page/page";
+import { Page, Pages } from "./page/page.js";
 
-import { HTTP404Page } from "./page/pages/http404_page";
+import { HTTP404Page } from "./page/pages/http404_page.js";
 
 const RootPath = "views/pages/";
 
 class Router {
+	constructor() {
+		this.routes = {};
+	}
 
-	navigate(page: Page, hash: string){
+	navigate(page, hash){
 		console.log(`Target: ${page.path + hash}`);
 		location.hash = page.path + hash;
 		this.loadRoute(page, hash);
 	}
 
-	buildPath(page: Page){
+	buildPath(page){
 		return RootPath + page.path + ".html";
 	}
 
-	loadRoute(page: Page, hash: any){
+	loadRoute(page, hash){
 		console.log(`[INFO] Loading route ${page.path}`);
 
 		const basePath = this.buildPath(page).split("#")[0];
@@ -40,7 +42,7 @@ class Router {
 				return response.text();
 			})
 			.then(html => {
-				querySelectorSafe("main").innerHTML = html;
+				document.querySelector("main").innerHTML = html;
 
 				InjectHeader().then(() => {
 					page.display(hash);

@@ -1,6 +1,6 @@
 "use strict";
 
-import { getElementByIdSafe } from "./html_utilities";
+import { getElementByIdSafe } from "./html_utilities.js";
 
 export function InjectHeader() {
 	console.log("Injecting Header...");

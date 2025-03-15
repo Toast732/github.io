@@ -1,0 +1,10 @@
+import { AboutPage } from "./pages/about_page.js";
+import { ContactListPage } from "./pages/contact_list_page.js";
+import { ContactPage } from "./pages/contact_page.js";
+import { EditPage } from "./pages/edit_page.js";
+import { HomePage } from "./pages/home_page.js";
+import { HTTP404Page } from "./pages/http404_page.js";
+import { LoginPage } from "./pages/login_page.js";
+import { ProductsPage } from "./pages/products_page.js";
+import { RegisterPage } from "./pages/register_page.js";
+import { ServicesPage } from "./pages/services_page.js";
