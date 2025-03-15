@@ -410,8 +410,6 @@
                 UpdateActiveNewLink();
             })
             .catch(error => console.log(error));
-
-
     }
 
     function LoadSearch(){

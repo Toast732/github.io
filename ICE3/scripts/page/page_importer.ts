@@ -1,0 +1,10 @@
+import { AboutPage } from "./pages/about_page";
+import { ContactListPage } from "./pages/contact_list_page";
+import { ContactPage } from "./pages/contact_page";
+import { EditPage } from "./pages/edit_page";
+import { HomePage } from "./pages/home_page";
+import { HTTP404Page } from "./pages/http404_page";
+import { LoginPage } from "./pages/login_page";
+import { ProductsPage } from "./pages/products_page";
+import { RegisterPage } from "./pages/register_page";
+import { ServicesPage } from "./pages/services_page";

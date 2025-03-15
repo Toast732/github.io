@@ -1,0 +1,23 @@
+{
+	"users":
+	[
+		{
+			"UserName": "toastery",
+			"EmailAddress": "toastery@toastery.org",
+			"DisplayName": "Toastery",
+			"Password": "GD*Bf^!O9N#4d71xRpxBXrofIdDRAVE7TcA%Lckg#AeOUOUT$tWiqUJlhcarzFoYLXQb^Mr74xoV4$CYxZ&#QSLL9!1$k605^wsGkDrx&2cGD8AhgZoR*$2FUtcJbd@0"
+		},
+		{
+			"UserName": "admin",
+			"EmailAddress": "admin@example.com",
+			"DisplayName": "Admin",
+			"Password": "CH@NGEME"
+		},
+		{
+			"UserName": "null",
+			"EmailAddress": "eee@eedwa.com",
+			"DisplayName": "null",
+			"Password": "Null@ble"
+		}
+	]
+}
